@@ -8,7 +8,7 @@ namespace Meringue
 public class Version
 {
     public static readonly int Major = 0;
-    public static readonly int Minor = 0;
+    public static readonly int Minor = 1;
     public static readonly int Build = 0;
 }
     
