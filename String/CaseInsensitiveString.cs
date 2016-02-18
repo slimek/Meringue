@@ -8,7 +8,7 @@ namespace Meringue
 /// Case-insensitive string wrapper.
 /// </summary>
 /// <typeparam name="T">The derived class.</typeparam>
-public class CainString< T > : IComparable< T > where T : CainString< T >
+public class CaseInsensitiveString< T > : IComparable< T > where T : CaseInsensitiveString< T >
 {
     protected string m_value;
 
@@ -17,12 +17,12 @@ public class CainString< T > : IComparable< T > where T : CainString< T >
 
     // Constructor //
 
-    public CainString()
+    public CaseInsensitiveString()
     {
         m_value = "";
     }
 
-    public CainString( string value )
+    public CaseInsensitiveString( string value )
     {
         m_value = value;
     }
@@ -38,7 +38,7 @@ public class CainString< T > : IComparable< T > where T : CainString< T >
         return this.Equals( derived );
     }
 
-    public bool Equals( CainString< T > other )
+    public bool Equals( CaseInsensitiveString< T > other )
     {
         if ( (object)other == null ) { return false; }
 
@@ -50,7 +50,7 @@ public class CainString< T > : IComparable< T > where T : CainString< T >
         return StringComparer.OrdinalIgnoreCase.GetHashCode( m_value );
     }
 
-    public static bool operator ==( CainString< T > lhs, CainString< T > rhs )
+    public static bool operator ==( CaseInsensitiveString< T > lhs, CaseInsensitiveString< T > rhs )
     {
         if ( Object.ReferenceEquals( lhs, rhs )) { return true; }
 
@@ -59,7 +59,7 @@ public class CainString< T > : IComparable< T > where T : CainString< T >
         return lhs.Equals( rhs );
     }
 
-    public static bool operator !=( CainString< T > lhs, CainString< T > rhs )
+    public static bool operator !=( CaseInsensitiveString< T > lhs, CaseInsensitiveString< T > rhs )
     {
         return !( lhs == rhs );
     }

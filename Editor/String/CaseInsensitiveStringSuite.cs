@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace Meringue
 {
 
-class CainText : CainString< CainText >
+class CainText : CaseInsensitiveString< CainText >
 {
     public CainText() {}
 
