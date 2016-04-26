@@ -136,19 +136,4 @@ public class CaseInsensitive< Derived > : IComparable
 }
 
 
-/// <summary>
-/// Case-insensitive string
-/// </summary>
-/// A simple implementation of CaseInsensitive< Derived >.
-public class CaseInsensitiveString : CaseInsensitive< CaseInsensitiveString >
-{
-    public CaseInsensitiveString()
-    {}
-
-    public CaseInsensitiveString( string value )
-        : base( value )
-    {}
-}
-
-
 }  // namespace Meringue
