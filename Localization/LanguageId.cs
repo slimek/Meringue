@@ -10,7 +10,7 @@ namespace Meringue
 /// Immutable.
 /// Equality and comparison are based on the tag string, case-insensitive.
 /// </remarks>
-public class LanguageId : CaseInsensitiveString< LanguageId >
+public class LanguageId : CaseInsensitive< LanguageId >
 {
     /// <summary>
     /// Should be an IETF Language Tag.

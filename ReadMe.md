@@ -17,7 +17,8 @@ Meringue 程式庫本身的預先定義常數。
 ### String
 協助字串處理的元件。
 
-* CaseInsensitiveString：不區分大小寫的字串，通常作為基底類別來使用。
+* CaseInsensitive：不區分大小寫的字串類型基底類別。
+* CaseInsensitiveString：不區分大小寫的字串。
 
 ----
 (c) 2016 Slimek
