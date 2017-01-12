@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿#if USE_UNI_RX
+
+using System.Collections;
 using UnityEngine;
 using UniRx;
 
@@ -24,3 +26,5 @@ namespace Meringue.Mvp
         }
     }
 } // namespace Meringue.Mvp
+
+#endif // USE_UNI_RX

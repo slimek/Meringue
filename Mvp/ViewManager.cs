@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿#if USE_UNI_RX
+
+using System.Collections.Generic;
 
 namespace Meringue.Mvp
 {
@@ -27,3 +29,5 @@ namespace Meringue.Mvp
         }
     }
 } // namespace Meringue.Mvp
+
+#endif // USE_UNI_RX
