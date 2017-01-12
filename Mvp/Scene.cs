@@ -10,7 +10,7 @@ namespace Meringue.Mvp
         {
             var observable = Observable.FromCoroutine(() => LoadViewAsync(viewName));
 
-            return observable.Select(_ => ViewManager.FindView(viewName));
+            return observable.Select(_ => ViewManager.FindView(viewName + "View"));
         }
 
         private IEnumerator LoadViewAsync(string viewName)
